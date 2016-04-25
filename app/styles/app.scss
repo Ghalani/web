@@ -40,7 +40,7 @@ html,body{
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px #565454;
-    input[type="text"] {
+    input[type="email"] {
       background: #3c3838;
       font-size: 30px;
       color: $primary-text;
@@ -56,7 +56,7 @@ html,body{
     }
 
     button {
-      background: url('../img/button-bg.png') $secondary-text;
+      background: url('img/button-bg.png') $secondary-text;
       font-size: 30px;
       font-weight: 900;
       color: $primary-text;
