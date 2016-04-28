@@ -53,8 +53,8 @@ html,body{
       box-sizing: border-box;
       -webkit-box-sizing:border-box;
       -moz-box-sizing: border-box;
-    }
 
+    }
     button {
       background: url('img/button-bg.png') $secondary-text;
       font-size: 30px;
@@ -81,6 +81,12 @@ html,body{
     :-moz-placeholder { /* Firefox 4 - 18 */
       color: $placehoder-text;
       opacity: 1;
+    }
+    .has-error{
+      input{
+        border: 2px solid #A50505;
+        overflow: auto;
+      }
     }
   }
 

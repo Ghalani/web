@@ -6,8 +6,15 @@
       <div class="row long-desc">We are about to change the world, and you shouldn't be left out. Join us in the making this a reality.</div>
   </div>
   <div id="input-cont" class="row bottom-margin">
-    {{input class="inshadow" value=userEmail type="email" placeholder="Enter your email address ..."}}
-    <button {{action "createSubscription"}}>Notify me</button>
+    <form class="" action="index.html" method="post" {{action "createSubscription"}}>
+      <div class="form-group {{if errors.title 'has-error'}}">
+        {{input class="inshadow" value=userEmail type="email" placeholder="Enter your email address ..."}}
+        <button type="submit">Notify me</button>
+      </div>
+      {{#each errors.title as |error|}}
+      <span class="help-block">{{error.message}}</span>
+      {{/each}}
+    </form>
   </div>
   <div id="social-cont" class="row bottom-margin">
     Facebook <span> | </span> Twitter  <span> | </span> RSS
