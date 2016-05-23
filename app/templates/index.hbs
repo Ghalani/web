@@ -1,22 +1,53 @@
-<div class="main">
-  <div id="logo-top" class="row bottom-margin">
-    <span>{ </span>Logo<span> }</span></div>
-  <div id="desc-cont" class="row bottom-margin">
-      <div class="row phrase">We are making something <span>super</span> awesome!</div>
-      <div class="row long-desc">We are about to change the world, and you shouldn't be left out. Join us in the making this a reality.</div>
-  </div>
-  <div id="input-cont" class="row bottom-margin">
-    <form class="" action="index.html" method="post" {{action "createSubscription"}}>
-      <div class="form-group {{if errors.title 'has-error'}}">
-        {{input class="inshadow" value=userEmail type="email" placeholder="Enter your email address ..."}}
-        <button type="submit">Notify me</button>
+<div id="landing-page">
+  <section id="home" class="row parent">
+    <div class="container guide">
+      <nav id="nav1" class="navbar navbar-default">
+        <div class="container-fluid guide">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Ghalani</a>
+          </div>
+          <ul class="nav navbar-nav fright">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="w576 child-center">
+      <div id="home-text1" class="mag-bottom">
+        Track your logistics more efficiently
       </div>
-      {{#each errors.title as |error|}}
-      <span class="help-block">{{error.message}}</span>
-      {{/each}}
-    </form>
-  </div>
-  <div id="social-cont" class="row bottom-margin">
-    Facebook <span> | </span> Twitter  <span> | </span> RSS
-  </div>
+      <div id="home-text2" class="mag-bottom">
+        I am writing something to pass away time and make you interested in my product so stick with me
+      </div>
+      <div id="home-text3">
+        <div class="btn but bg-green">
+          START NOW
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="overview" class="row">
+    <nav id="nav2" class="navbar navbar-default">
+      <div class="container-fluid guide">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Ghalani</a>
+        </div>
+        <ul class="nav navbar-nav fright">
+          <li class="active"><a href="#">Overview</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><div class="btn but bg-white">START NOW</div></li>
+
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="features" class="row">
+    dfdfdf
+  </section>
+  <section id="contact" class="row">
+    dfdfdf
+  </section>
 </div>
