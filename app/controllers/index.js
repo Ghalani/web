@@ -35,5 +35,9 @@ export default Ember.Controller.extend({
     }
 
     return this.get('errors.isEmpty');
+  },
+  didInsertElement: function() {
+    alert("shdsjdhjhsd");
+    this.$("#nav2").fadeOut("slow");
   }
 });

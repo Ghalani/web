@@ -1,20 +1,43 @@
 @import 'subscribe';
 $primary-bg-color: #4caf50;
 $whitish: #f5f5f5;
+$primary-text: #5f6061;
+$white: #fff;
 
 html,body{
   //background: url('img/bg.png') $background-color;
   font-family: 'Roboto', sans-serif;
+  color: $primary-text;
 }
 
 #landing-page{
+  font-size: 15px;
+
+  .lh25{
+    line-height: 25px;
+  }
+  .small-text{
+  }
+  .big-text{
+    font-size: 37px
+  }
+
   .row{
     margin: 0;
   }
 
+  .hcenter{
+    margin: auto;
+  }
+
+  .pad-tb{
+    padding: 50px 0;
+  }
+  hr{
+    margin: 50px 0 50px 0;
+  }
   section{
-    background: #eee ;
-    min-height: 800px;
+    min-height: 600px;
   }
   .guide{
     max-width: 1000px;
@@ -71,6 +94,27 @@ html,body{
     text-align: center;
   }
 
+  .w800{
+    max-width: 866px;
+    text-align: center;
+  }
+
+  .marg-bottom{
+    margin-bottom: 20px;
+  }
+
+  .mgb60{
+    margin-bottom: 60px;
+  }
+
+  .tcenter{
+    text-align: center;
+  }
+
+  .accent{
+    color: #00bfa5;
+  }
+  
   #home{
     background: #0d2c10 url('img/backtruck.png') no-repeat;
     background-size:     cover;
@@ -83,8 +127,57 @@ html,body{
       font-size: 20px;
       color: #e5e5e5;
     }
-    .mag-bottom{
-      margin-bottom: 20px;
+  }
+
+  #contact{
+    .tuck-up{
+      margin-top: -200px;
+      //background: $white;
+      height: auto;
+      position: relative;
     }
   }
+
+  #social-icons{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    i{
+      margin: 0 10px;
+    }
+    i.fa-facebook:hover{
+      color: #3B5998;
+    }
+    i.fa-twitter:hover{
+      color: #1DA1F2;
+    }
+    i.fa-linkedin:hover{
+      color: #1B86BD;
+    }
+  }
+
+  #subscribe-cont{
+    color: $whitish;
+    background: #000 url('img/bg2.png');
+
+    .rounded{
+      padding: 10px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 2px 2px;
+      border-radius: 2px;
+    }
+
+    input{
+      width: 100%;
+    }
+
+    button{
+      background: #00c853;
+    }
+  }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+  padding-right: 0px;
+  padding-left: 0px;
 }

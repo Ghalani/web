@@ -15,10 +15,10 @@
       </nav>
     </div>
     <div class="w576 child-center">
-      <div id="home-text1" class="mag-bottom">
+      <div id="home-text1" class="marg-bottom">
         Track your logistics more efficiently
       </div>
-      <div id="home-text2" class="mag-bottom">
+      <div id="home-text2" class="marg-bottom">
         I am writing something to pass away time and make you interested in my product so stick with me
       </div>
       <div id="home-text3">
@@ -35,19 +35,130 @@
           <a class="navbar-brand" href="#">Ghalani</a>
         </div>
         <ul class="nav navbar-nav fright">
-          <li class="active"><a href="#">Overview</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="#overview">Overview</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><div class="btn but bg-white">START NOW</div></li>
 
         </ul>
       </div>
     </nav>
+    <div class="container guide">
+      <div class="w800 hcenter">
+        <div class="big-text marg-bottom">The best way to track your drivers and pickups</div>
+        <div class="small-text marg-bottom mgb60">
+          With Ghalani you can monitor your assigned driver and be informed all the way from pickup to delivery of your cargo, whether big or small, you decide, we monitor
+We tack everything fotr you with just the phones of your driver.
+        </div>
+      </div>
+      <div class="tcenter mgb60">
+        <img src="assets/img/iphone.png" class="w800" alt="" />
+      </div>
+      <div class="row">
+        <div class="col-sm-4 row">
+          <div class="col-md-3 tcenter">34</div>
+          <div class="col-md-9 lh25">sdhs jdhjsdh dskdjs dskdj smsdsd sksdkjs sdksdkjsd skd sdksds sjdhsjdhsjd</div>
+        </div>
+        <div class="col-sm-4 row">
+          <div class="col-md-3 tcenter">34</div>
+          <div class="col-md-9 lh25">sdhs jdhjsdh dskdjs dskdj smsdsd sksdkjs sdksdkjsd skd sdksds sjdhsjdhsjd</div>
+        </div>
+        <div class="col-sm-4 row">
+          <div class="col-md-3 tcenter">34</div>
+          <div class="col-md-9 lh25">sdhs jdhjsdh dskdjs dskdj smsdsd sksdkjs sdksdkjsd skd sdksds sjdhsjdhsjd</div>
+        </div>
+      </div>
+    </div>
   </section>
+  <hr>
   <section id="features" class="row">
-    dfdfdf
+    <div class="container guide">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="assets/img/iphone2.png" alt="" />
+        </div>
+        <div class="col-sm-6">
+          <div class="">
+            <div class="big-text marg-bottom">The best way to track your drivers and pickups</div>
+            <div class="small-text marg-bottom mgb60">
+              With Ghalani you can monitor your assigned driver and be informed all the way from pickup to delivery of your cargo, whether big or small, you decide, we monitor
+    We tack everything fotr you with just the phones of your driver.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              23
+            </div>
+            <div class="col-sm-9 mgb60">
+              sjdhsj shdsj djshdjsh jsdh wew
+              dhsdjsjdhjs dhsh csjdh sdsd
+              sjdhsj shdsj djshdjsh jsdh wew
+              dhsdjsjdhjs dhsh csjdh sdsd
+            </div>
+          </div>
+          <div class="">
+            <div class="col-sm-3">
+              23
+            </div>
+            <div class="col-sm-9">
+              sjdhsj shdsj djshdjsh jsdh wew
+              dhsdjsjdhjs dhsh csjdh sdsd
+              sjdhsj shdsj djshdjsh jsdh wew
+              dhsdjsjdhjs dhsh csjdh sdsd
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="contact" class="row">
-    dfdfdf
+    <div id="subscribe-cont" class="tuck-up pad-tb">
+      <div class="container guide">
+        <div class="w576 hcenter">
+          <div class="big-text marg-bottom">Subscribe to our newsletter!</div>
+          <div class="small-text marg-bottom mgb60">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="w800">
+            <form class="" action="index.html" method="post" {{action "createSubscription"}}>
+              <div class="row form-group {{if errors.title 'has-error'}}">
+                <div class="col-sm-8 ">
+                  {{input class="rounded" value=userEmail type="email" placeholder="Enter your email address ..."}}
+                </div>
+                <div class="col-sm-4">
+                  <button class="rounded" type="submit">SUBSCRIBE NOW</button>
+                </div>
+              </div>
+              {{#each errors.title as |error|}}
+              <span class="help-block">{{error.message}}</span>
+              {{/each}}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-tb">
+      <div class="big-text tcenter marg-bottom">
+        Contact Info
+      </div>
+      <div class="w576 hcenter marg-bottom">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="tcenter big-text accent">
+        ghalaniapp@gmail.com
+      </div>
+    </div>
+    <hr>
+    <div class="">
+      <div id="social-icons">
+        {{fa-icon "facebook"}}
+        {{fa-icon "twitter"}}
+        {{fa-icon "linkedin"}}
+      </div>
+      <div id="copyright" class="tcenter">
+        Copyright &copy; 2016
+      </div>
+
+    </div>
   </section>
 </div>
